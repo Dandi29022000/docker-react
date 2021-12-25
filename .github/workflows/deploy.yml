@@ -33,7 +33,6 @@ jobs:
         run: |
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/hello-react .
           docker push ${{ secrets.DOCKERHUB_USERNAME}}/hello-react
-          
       - name: 'Write config'
         run: |
           mkdir ~/.oci
